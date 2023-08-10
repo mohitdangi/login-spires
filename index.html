@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+   *{
+      margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .login-container {
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .how-it-works {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0px 50px;
+    color: #fff;
+    padding-top: 60px;
+    background: #f38e27;
+  }
+
+  .how-it-works h2 {
+    color: #fff;
+    /* margin-bottom: 20px; */
+    font-weight: 500;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .how-it-works-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 80px;
+  }
+
+  .how-it-works-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .how-it-works-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .how-it-works-icon i {
+    color: #f38e27;
+  }
+  .how-it-works-image img{
+   width: 70%;
+   padding-left: 60px; 
+  }
+  .download-section{
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    gap:20px;
+  }
+  .download-section img{
+   width: 120px;
+   
+  }
+  .login-section {
+  flex: 1;
+  padding: 40px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.company-logo {
+  width: 130px;
+  margin-bottom: 40px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form input {
+   width: 200px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+.login-form button {
+  background-color: #f38e27;
+  color: #fff;
+  border: none;
+  width: 200px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.register-link {
+  color: #f38e27;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.login-form button:hover {
+   background-color: #fff;
+    color: #f38e27;
+    border: 1px solid #f38e27;
+  }
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .social-login a {
+   display: inline-block;
+    background-color: #f38e27;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 200px;
+    /* margin-right: 45px; */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .social-login a span {
+    display: block;
+  }
+
+  .social-login a:hover {
+   background-color: #fff;
+    color: #f38e27;
+    border: 1px solid #f38e27;
+  }
+
+
+.or-divider {
+    border-bottom: 1px dashed grey;
+    padding: 6px;
+    width: 45%;
+    padding-bottom: 15px;
+}
+
+
+
+
+  .register-link {
+    color: #f38e27;
+    margin-top: 10px;
+    text-decoration: none;
+    border: 1px solid #f38e27;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .register-link:hover {
+    background-color: #f38e27;
+    color: #fff;
+  }
+
+@media (max-width: 767px) {
+   body {
+    display: block;
+  }
+
+  /* .how-it-works {
+    display: none;
+  } */
+
+  .login-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .how-it-works {
+    padding: 0px;
+    padding-top: 20px;
+  }
+  .how-it-works-image img {
+    /* width: 70%; */
+    width: 100%;
+    padding: 0px;
+  }
+  .login-section {
+    padding: 40px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .company-logo {
+    margin-bottom: 10px;
+  }
+
+  .login-form input,
+  .login-form button,
+  .register-link,
+  .social-login a {
+    width: 80%;
+    margin: 5px 0;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="login-container">
+  <div class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="how-it-works-item">
+      <div class="how-it-works-icon">
+        <i class="fa fa-envelope"></i>
+      </div>
+      <div>Get in touch with us</div>
+    </div>
+    <div class="how-it-works-item">
+      <div class="how-it-works-icon">
+        <i class="fa fa-user-plus"></i>
+      </div>
+      <div>Join us</div>
+    </div>
+    <div class="how-it-works-item">
+      <div class="how-it-works-icon">
+        <i class="fa fa-users"></i>
+      </div>
+      <div>Bring your own talent pool</div>
+    </div>
+    <div class="download-section">
+      <a href="link-to-your-ios-app"><img src="https://freeiconshop.com/wp-content/uploads/edd/app-store-badge-128x128.png" alt="Download on the App Store"></a>
+      <a href="link-to-your-android-app"><img src="https://www.freepnglogos.com/uploads/play-store-logo-png/play-store-logo-nisi-filters-australia-11.png" alt="Get it on Google Play"></a>
+    </div>
+    <div class="how-it-works-image">
+      <img src="./86799d70-4167-4b80-92e0-dde075db21bf-removebg-preview.png" alt="jobs images png @transparentpng.com">
+  </div>
+
+
+  </div>
+ 
+  <div class="login-section">
+   <img class="company-logo" src="./loho-removebg-preview.png" alt="Company Logo">
+   <div class="login-form">
+     <input type="email" placeholder="Company Email Address">
+     <input type="password" placeholder="Password">
+     <button>Login</button>
+     <div class="social-login">
+       <a href="#" class="google-login">
+         <span>Sign In with Google</span>
+       </a>
+     </div>
+     <div class="or-divider">
+      
+    </div>
+    
+    
+     <a href="#" class="register-link" style="font-size: 13.8px;">Don't have an account? Register</a>
+   </div>
+ </div>
+</div>
+</body>
+</html>
